@@ -1,0 +1,25 @@
+<template>
+  <lightning-card title="Register">
+    <div class="slds-p-around_medium slds-grid slds-wrap slds-gutters">
+      <div class="slds-col slds-size_1-of-1">
+        <lightning-input value={firstName} onchange={handleFirstName} label="First Name"></lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-1">
+        <lightning-input value={lastName} onchange={handleLastName} label="Last Name"></lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-1">
+        <lightning-input type="email" value={email} onchange={handleEmail} label="Email"></lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-1">
+        <lightning-input value={username} onchange={handleUserName} label="Username"></lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-1">
+        <lightning-input value={accName} onchange={handleAccountName} label="Account Name"></lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-1 slds-m-top_medium">
+        <lightning-button label="Register" variant="brand" onclick={createContactRecord}></lightning-button>
+      </div>
+    </div>
+    <!-- <lightning-flow flow-api-name="Customer_Registration_Flow" onstatuschange={handleFlowStatusChange}></lightning-flow> -->
+  </lightning-card>
+</template>
